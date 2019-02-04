@@ -1,0 +1,39 @@
+// Grid
+// .container is main centered wrapper with a max width of 112.0rem (1120px)
+.container {
+  margin: 0 auto;
+  max-width: 112rem;
+  padding: 0 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+
+  .column {
+    display: block;
+    // IE 11 required specifying the flex-basis otherwise it breaks mobile
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+// Larger than mobile screen
+@media (min-width: 40rem) {
+  .row {
+    flex-direction: row;
+    margin-left: -1rem;
+    width: calc(100% + 2.0rem);
+
+    .column {
+      margin-bottom: inherit;
+      padding: 0 1rem;
+    }
+  }
+}

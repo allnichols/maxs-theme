@@ -1,0 +1,103 @@
+// Typography
+
+b,
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin-top: 2rem;
+  font-family: $font-primary;
+}
+
+.content-title{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+   &::after{
+     content: "";
+     display: block;
+     width: 150px;
+     height: 3px;
+     background-color: $color-primary;
+     margin: 20px auto;
+   }
+}
+
+.form-title{
+  &:after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    margin: 15px auto;
+  }
+}
+
+.entry-title{
+  a{
+    @include font-size(35px);
+    color: black;
+  }
+}
+
+.section-title{
+  @include font-size(50px);
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.title-line{
+  width: 150px;
+  background: $color-primary;
+  padding: 1.6px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom:25px;
+}
+
+h1 {
+  font-size: 4.6rem;
+  line-height: 1.2;
+}
+
+h2 {
+  @include font-size(45px);
+  // letter-spacing: .01px;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 2.2rem;
+  letter-spacing: -0.08rem;
+  line-height: 1.35;
+}
+
+h5 {
+  font-size: 1.8rem;
+  letter-spacing: -0.05rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+}

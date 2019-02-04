@@ -1,0 +1,11 @@
+// Image
+
+img {
+  max-width: 100%;
+}
+
+.attachment-post-thumbnail{
+  max-width: 300px;
+  object-fit: contain;
+  border: 1px solid #eee;
+}

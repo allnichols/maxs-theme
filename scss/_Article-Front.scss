@@ -1,0 +1,13 @@
+.front--article{
+  border-radius: 3px;
+  background: $color-tertiary;
+  margin-bottom: 10px;
+  img{
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.front--article__content{
+  padding: 15px;
+}

@@ -1,0 +1,38 @@
+//Button
+
+.btn{
+   display: inline-block;
+   background: $color-primary;
+   padding: 10px 20px;
+   position: relative;
+   transition: all .3s;
+   &:hover{
+     background: #fff;
+     color: $color-primary;
+   }
+}
+
+.btn-work{
+  &:hover{
+    background: $rusty-red;
+    color: white;
+  }
+}
+
+
+.btn-fancy{
+  width: 50%;
+  @include bp-medium{
+    width: 25%;
+  };
+  border:3px solid $rusty-red;
+  display: inline-block;
+  color: white;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  transition: .3s ease;
+  overflow-x: hidden;
+  &:hover{
+    background-color: $rusty-red;
+  }
+}
