@@ -596,7 +596,7 @@ h6 {
 
 .hero {
   height: 98vh;
-  background: linear-gradient(170deg, #3a4660 60%, rgba(0, 0, 0, 0) 40%), linear-gradient(70deg, #c9af98 60%, #c1432e 60%);
+  background: linear-gradient(160deg, #3a4660 65%, rgba(0, 0, 0, 0) 40%), linear-gradient(70deg, #c9af98 60%, #c1432e 60%);
   background-attachment: fixed; }
   @media only screen and (min-width: 40em) {
     .hero {
