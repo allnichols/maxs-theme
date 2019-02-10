@@ -13,7 +13,7 @@
 </div>
 
 <section class="section_sell">
-  <h1></h1>
+  <h2 class="content-title"><?php the_field('service_header'); ?></h2>
 </section>
 
 
