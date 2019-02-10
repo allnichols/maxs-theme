@@ -10,8 +10,11 @@
       <a class="btn btn-1c" href="<?php echo get_page_link(66); ?>"><?php the_field('btn_text') ?></a>
     </div>
   </div>
-  <div class="arrow-down"></div>
 </div>
+
+<section class="section_sell">
+  <h1></h1>
+</section>
 
 
 <section class="section_works">

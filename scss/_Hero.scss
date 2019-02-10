@@ -86,29 +86,3 @@
     };
   }
 }
-
-.arrow-down{
-  width: 35px;
-  height: 35px;
-  margin: 0 auto;
-  text-align: center;
-  position: absolute;
-  bottom:1.3%;
-  left:50%;
-  transform: translateX(-50%);
-  @include bp-medium{
-    display: none;
-  };
-  &::after{
-    content: "";
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    bottom:0;
-    left:50%;
-    border-right: 4px solid $color-primary;
-    border-bottom: 4px solid $color-primary;
-    border-radius:2px;
-    transform: rotate(45deg) translateX(-50%);
-  }
-}
