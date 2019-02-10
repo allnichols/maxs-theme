@@ -2,14 +2,22 @@
 
 .btn{
    display: inline-block;
-   background: $blue-jean;
+   background: $color-primary;
    padding: 10px 20px;
    position: relative;
    transition: all .3s;
    &:hover{
-     background: $tan;
-     color: white;
+     background: white;
+     color: $color-primary;
    }
+}
+
+.btn-service{
+  background-color: $blue-jean;
+  &:hover{
+    background: $tan;
+    color: white;
+  }
 }
 
 .btn-work{

@@ -27,7 +27,7 @@
       </svg>
       <h2>Local Business SEO</h2>
       <p><?php the_field('seo_description') ?></p>
-      <a href="!#" class="btn">Learn More</a>
+      <a href="!#" class="btn btn-service">Learn More</a>
     </div>
     <div class="service">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -41,7 +41,7 @@
       </svg>
       <h2>Web Design</h2>
       <p><?php the_field('design_description') ?></p>
-      <a href="!#" class="btn">Learn More</a>
+      <a href="!#" class="btn btn-service">Learn More</a>
     </div>
     <div class="service">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -55,7 +55,7 @@
       </svg>
       <h2>Development</h2>
       <p><?php the_field('dev_description') ?></p>
-      <a href="!#" class="btn">Learn More</a>
+      <a href="!#" class="btn btn-service">Learn More</a>
     </div>
   </div>
 
