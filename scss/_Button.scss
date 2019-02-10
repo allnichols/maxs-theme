@@ -2,13 +2,13 @@
 
 .btn{
    display: inline-block;
-   background: $color-primary;
+   background: $blue-jean;
    padding: 10px 20px;
    position: relative;
    transition: all .3s;
    &:hover{
-     background: #fff;
-     color: $color-primary;
+     background: $tan;
+     color: white;
    }
 }
 
