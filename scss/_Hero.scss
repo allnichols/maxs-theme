@@ -3,13 +3,11 @@
   height: 98vh;
   @include bp-medium{
     height: 80vh;
-
   };
-  background:
+
+  background-image:
     linear-gradient(160deg, $blue-jean 65%, rgba(0,0,0,0) 40%),
     linear-gradient(70deg, $tan 60%, $rusty-red 60%);
-    background-attachment: fixed;
-
 }
 
 .hero-services{

@@ -26,10 +26,10 @@
     <div class="container grid-menu">
 
           <div class="logo-div">
-            <a href="<?php  $url = home_url();  echo $url; ?>"class="logo">Max Nichols</a>
+            <a href="<?php  $url = home_url();  echo $url; ?>"class="logo">(MN<span>+</span>) Max Nichols</a>
           </div>
 
-          <div class="menu-div">          
+          <div class="menu-div">
             <?php wp_nav_menu(array(
               'theme_location' => 'menu-main',
               'menu_class' => 'menu',
