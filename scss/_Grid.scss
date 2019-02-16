@@ -8,6 +8,14 @@
   width: 100%;
 }
 
+.container-lrg{
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  width: 100%;
+}
+
 .row {
   display: flex;
   flex-direction: column;

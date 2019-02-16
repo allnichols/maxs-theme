@@ -23,10 +23,10 @@
 <body <?php body_class(); ?>>
 
   <nav class="navigation">
-    <div class="container grid-menu">
+    <div class="container-lrg grid-menu">
 
           <div class="logo-div">
-            <a href="<?php  $url = home_url();  echo $url; ?>"class="logo">(MN<span>+</span>) Max Nichols</a>
+            <a href="<?php  $url = home_url();  echo $url; ?>"class="logo">Max Nichols</a>
           </div>
 
           <div class="menu-div">
