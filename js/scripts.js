@@ -4,7 +4,6 @@ document.querySelector('.burger').addEventListener("click", function(){
     this.classList.toggle('close');
 });
 
-const nav = document.querySelector('nav');
 
 //Scroll and Show elements
 let isScrolling = false;
@@ -33,8 +32,8 @@ function scrolling(e){
      act_btn.classList.remove('hide');
      act_btn.classList.add('slide-in-right');
   } else{
-    act_btn.classList.remove('slide-in-right');
-    act_btn.classList.add('hide');
+    // act_btn.classList.remove('slide-in-right');
+    // act_btn.classList.add('hide');
   }
 
   for (let i = 0; i < titles.length; i++) {
@@ -42,9 +41,6 @@ function scrolling(e){
     if (isFullyVisible(list)) {
       list.classList.remove('hide');
       list.classList.add('slide-in-left');
-    } else {
-      list.classList.remove('slide-in-left');
-      list.classList.add('hide');
     }
   }
 
@@ -53,9 +49,6 @@ function scrolling(e){
     if (isPartiallyVisible(work)) {
       work.classList.remove('hide-work');
       work.classList.add('slide-in-right');
-    } else {
-      work.classList.remove('slide-in-right');
-      work.classList.add('hide-work');
     }
   }
 
@@ -83,31 +76,33 @@ function isPartiallyVisible(el){
 
 // End of show elements on page scroll
 
-jQuery(document).ready(function ($) {
-  const $links = $('.menu-item a');
 
-  $links.on('click', function(event){
-      event.preventDefault();
-
-      const href = $(this).attr("href");
-
-      window.history.pushState(null, null, href);
-
-  
-
-      $.ajax({
-        url: href,
-        success: function(data) {
-          $('.next').fadeOut(250, function() {
-
-            const newPage = $(data).filter('.next').html();
-            $('.next').html(newPage);
-
-            $('.next').fadeIn(250);
-          });
-        }
-      })
-
-  });
-
-});
+//Page transition
+// jQuery(document).ready(function ($) {
+//   const $links = $('.menu-item a');
+//
+//   $links.on('click', function(event){
+//       event.preventDefault();
+//
+//       const href = $(this).attr("href");
+//
+//       window.history.pushState(null, null, href);
+//
+//
+//
+//       $.ajax({
+//         url: href,
+//         success: function(data) {
+//           $('.next').fadeOut(250, function() {
+//
+//             const newPage = $(data).filter('.next').html();
+//             $('.next').html(newPage);
+//
+//             $('.next').fadeIn(250);
+//           });
+//         }
+//       })
+//
+//   });
+//
+// });

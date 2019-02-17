@@ -10,6 +10,7 @@
 
 .logo-div{
   padding-top: 5px;
+  z-index:20;
 }
 
 .logo{
@@ -17,6 +18,7 @@
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
+
   span{
     color: $rusty-red;
   }
@@ -30,6 +32,7 @@
   width: 35px;
   height: 45px;
   position: relative;
+  z-index: 20;
   @include bp-medium{
     display: none;
   };
@@ -94,7 +97,6 @@
      list-style-type: none;
      margin: 0 auto;
      text-align: center;
-     top: 98px;
      @include bp-medium{
        width: 100%;
        height: 50px;
@@ -158,5 +160,5 @@
 
 .show{
   height: 100%;
-  padding-top: 10vh;
+  padding-top: 20vh;
 }
