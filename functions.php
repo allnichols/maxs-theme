@@ -69,6 +69,10 @@ function js_enqueue_script(){
 add_action('wp_enqueue_scripts', 'js_enqueue_script');
 
 
+wp_register_script('jquery', ('http://ajax.googleapis.com/ ajax/libs/jquery/3.3.1/jquery.min.js'), false, null);
+wp_enqueue_script('jquery');
+
+
 //Google Fonts
 function google_fonts(){
   echo "<link href='https://fonts.googleapis.com/css?family=Montserrat|Karla' rel='stylesheet'>";

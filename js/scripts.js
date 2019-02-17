@@ -5,7 +5,6 @@ document.querySelector('.burger').addEventListener("click", function(){
 });
 
 const nav = document.querySelector('nav');
-console.log(nav.clientHeight);
 
 //Scroll and Show elements
 let isScrolling = false;
@@ -82,48 +81,31 @@ function isPartiallyVisible(el){
   return ((top + height >= 0) && (height + window.innerHeight >= bottom));
 }
 
+// End of show elements on page scroll
 
+jQuery(document).ready(function ($) {
+  const $links = $('.menu-item a');
 
+  $links.on('click', function(event){
+      event.preventDefault();
 
+      const href = $(this).attr("href");
 
-// console.log(isPartiallyVisible(act_btn));
+      window.history.pushState(null, null, href);
 
+      $.ajax({
+        url: href,
+        success: function(data) {
+          $('.next').fadeOut(250, function() {
 
-//slider
+            const newPage = $(data).filter('.next').html();
+            $('.next').html(newPage);
 
-// Variables
-// const track = document.querySelector('.carousel__track');
-// const slides = Array.from(track.children);
-// const nextBtn = document.querySelector('.carousel_btn--right');
-// const prevBtn=  document.querySelector('.carousel_btn--left');
-// // add dots as future add on.
-// console.log(slides);
-// const slideWidth = slides[0].getBoundingClientRect().width;
-//
-// // arrange slides next to each other
-// const setSlidePosition = (slide, index) => {
-//   slide.style.left = slideWidth * index + 'px';
-// }
-// slides.forEach(setSlidePosition);
-//
-//
-// const moveToSlide = (track, currentSlide, targetSlide) => {
-//   track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-//   currentSlide.classList.remove('current');
-//   targetSlide.classList.add('current');
-// }
-//
-//
-// // Click left, move slides to the right
-// prevBtn.addEventListener('click', e => {
-//   const currentSlide = track.querySelector('.current');
-//   const prevSlide = currentSlide.previousElementSibling;
-//   moveToSlide(track, currentSlide, prevSlide);
-// })
-// // Click right, move slides to the left
-// nextBtn.addEventListener('click', e => {
-//     const currentSlide = track.querySelector('.current');
-//     const nextSlide = currentSlide.nextElementSibling;
-//   //move to the next slide
-//     moveToSlide(track, currentSlide, nextSlide);
-// });
+            $('.next').fadeIn(250);
+          });
+        }
+      })
+
+  });
+
+});
