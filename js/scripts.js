@@ -93,6 +93,8 @@ jQuery(document).ready(function ($) {
 
       window.history.pushState(null, null, href);
 
+  
+
       $.ajax({
         url: href,
         success: function(data) {
