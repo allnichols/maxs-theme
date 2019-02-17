@@ -32,8 +32,7 @@ function scrolling(e){
      act_btn.classList.remove('hide');
      act_btn.classList.add('slide-in-right');
   } else{
-    // act_btn.classList.remove('slide-in-right');
-    // act_btn.classList.add('hide');
+    
   }
 
   for (let i = 0; i < titles.length; i++) {
