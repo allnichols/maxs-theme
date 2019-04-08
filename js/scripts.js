@@ -32,7 +32,7 @@ function scrolling(e){
      act_btn.classList.remove('hide');
      act_btn.classList.add('slide-in-right');
   } else{
-    
+
   }
 
   for (let i = 0; i < titles.length; i++) {
@@ -72,36 +72,3 @@ function isPartiallyVisible(el){
 
   return ((top + height >= 0) && (height + window.innerHeight >= bottom));
 }
-
-// End of show elements on page scroll
-
-
-//Page transition
-// jQuery(document).ready(function ($) {
-//   const $links = $('.menu-item a');
-//
-//   $links.on('click', function(event){
-//       event.preventDefault();
-//
-//       const href = $(this).attr("href");
-//
-//       window.history.pushState(null, null, href);
-//
-//
-//
-//       $.ajax({
-//         url: href,
-//         success: function(data) {
-//           $('.next').fadeOut(250, function() {
-//
-//             const newPage = $(data).filter('.next').html();
-//             $('.next').html(newPage);
-//
-//             $('.next').fadeIn(250);
-//           });
-//         }
-//       })
-//
-//   });
-//
-// });

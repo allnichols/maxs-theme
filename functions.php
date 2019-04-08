@@ -52,8 +52,9 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Custom CSS
 function customStyle_enqueue_style(){
-    $url = get_stylesheet_directory_uri() .'/css/milli.css';
-    wp_enqueue_style('milligram', $url);
+    $url = get_stylesheet_directory_uri() . '/css/milli.css';
+    wp_enqueue_style('milligram', $url,  array(), rand(111,9999));
+    // array & rand() are fixes for updating the css on reload
 }
 add_action('wp_enqueue_scripts', 'customStyle_enqueue_style');
 

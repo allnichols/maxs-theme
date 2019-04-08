@@ -1,6 +1,6 @@
 // Hero section for landing page.
 .hero{
-  height: 98vh;
+  height: 96vh;
   @include bp-medium{
     height: 80vh;
   };
@@ -10,41 +10,42 @@
     linear-gradient(70deg, $tan 60%, $rusty-red 60%);
 }
 
-.hero-services{
-  background:
-  linear-gradient(130deg, $tan 60%, $rusty-red 30%),
-  linear-gradient(140deg, $blue-jean 40%, rgba(0,0,0,0) 40%);
-  background-attachment: fixed;
-  height: 30%;
-  .call-to-action{
-    text-align: center;
-    padding: 3%;
-  @include bp-medium{
-    padding-top: 8%;
-  };
-  @include bp-large{
-    padding-top: 5%;
-  };
-    h1{
-      font-size: 30px;
-      line-height: 35px;
-      @include bp-medium{
-        font-size: 45px;
-      };
-    }
-    h3{
-      font-size: 20px;
-      @include bp-medium{
-        font-size: 23px;
-      };
-    }
+
+.learn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  h4{
+    margin-bottom: 5px;
+  }
+  i{
+    border: solid white;
+    border-width: 0px 5px 5px 0;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    cursor: pointer;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 }
 
 
+
+
+
+
+
+
 .call-to-action{
   text-align: left;
-  padding-top: 3%;
+  padding-top: 30%;
   @include bp-medium{
     padding-top: 20%;
   };
@@ -52,8 +53,8 @@
     padding-top: 15%;
   };
   h1{
-    @include font-size(60px);
-    line-height: 40px;
+    @include font-size(70px);
+    line-height: 50px;
     color: white;
     font-family: $font-primary;
     font-weight:bold;
@@ -64,8 +65,8 @@
       line-height: 30px;
     };
     @include bp-large{
-      @include font-size(64px);
-      line-height: 40px;
+      @include font-size(80px);
+      line-height: 60px;
     };
 
   }
