@@ -45,14 +45,13 @@ function scrolling(e){
 
   for (let i = 0; i < works.length; i++) {
     let work = works[i];
-    if (isPartiallyVisible(work)) {
+    if (isFullyVisible(work)) {
       work.classList.remove('hide-work');
       work.classList.add('slide-in-right');
     }
   }
 
 }
-
 
 function isFullyVisible(el){
   var boundary = el.getBoundingClientRect();
@@ -61,14 +60,4 @@ function isFullyVisible(el){
   var bottom = boundary.bottom;
 
   return ((top >= 0) && (bottom <= window.innerHeight));
-}
-
-function isPartiallyVisible(el){
-  var boundary = el.getBoundingClientRect();
-
-  var top = boundary.top;
-  var bottom = boundary.bottom;
-  var height = boundary.height;
-
-  return ((top + height >= 0) && (height + window.innerHeight >= bottom));
 }

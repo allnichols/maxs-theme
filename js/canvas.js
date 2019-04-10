@@ -6,29 +6,14 @@ canvas.height = window.innerHeight;
 //C stands for context
 var c = canvas.getContext('2d');
 
-//Color Array
-var colorArray = [
-    // '#7888BF',
-    // '#68C2E5',
-    'white'
-  ]
 
-//Random color function
-function randomColor(colors){
-    return colors[Math.floor(Math.random() * colors.length)];
-}
-
-
-function Circle(x, y, dx, dy, radius, color){
+function Circle(x, y, radius, color){
     this.x = x;
     this.y = y;
-    this.dx = dx;
-    this.dy = dy;
     this.radius = radius;
-    this.minRadius = radius;
     this.color = color;
     this.radians = Math.random() * Math.PI * 2;
-    this.velocity = Math.random() * .01;
+    this.velocity = Math.random() * .002;
     this.distanceFromCenter = (Math.random() * 100) * 10;
 
     //move the circle
@@ -59,12 +44,10 @@ function init(){
     for(let i = 0; i < 250; i++){
         var x =  innerWidth / 2;
         var y =  innerHeight / 2;
-        var dx = 10;
-        var dy = 10;
-        var radius = Math.random() * 2;
+        var radius = Math.random() * 1.5;
         // var color = randomColor( colorArray )
 
-        particleArray.push( new Circle(x, y, dx, dy, radius, 'white') );
+        particleArray.push( new Circle(x, y, radius, 'white') );
 
     }
 }
