@@ -3,15 +3,18 @@
  */ get_header(); ?>
 
     <div class="hero">
-      <div class="container">
-        <div class="call-to-action">
-          <h1><?php the_field('main_title') ?></h1>
-        </div>
-      </div>
-        <div class="learn">
-          <h4 class="learn-more">Learn More</h4>
-          <i class="arrow down"></i>
-      </div>
+      <div class="canvas-container">
+                <canvas id="canvas"></canvas>
+         </div>
+
+         <div class="overlay">
+            <div class="overlay-content">
+                    <h1>Hello, I'm Max Nichols</h1>
+                    <h2>I'm a Front-End Developer</h2>
+                    <button>Look at my Projects</button>
+                    <button>Download Resume</button>
+            </div>
+         </div>
     </div>
 
 
