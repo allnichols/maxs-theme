@@ -9,10 +9,10 @@
 
          <div class="overlay">
             <div class="overlay-content">
-                    <h1>Hello, I'm Max Nichols</h1>
-                    <h2>I'm a Front-End Developer</h2>
+                    <h1>Hello, I'm <span class="name">Max Nichols</span> </h1>
+                    <h2>I'm a <span class="decor">Front-End</span> Developer</h2>
                     <button>Look at my Projects</button>
-                    <button>Download Resume</button>
+
             </div>
          </div>
     </div>

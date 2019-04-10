@@ -1,7 +1,9 @@
 .navigation{
-  background-color: $blue-jean;
+  background:transparent;
   width: 100%;
   padding: 1.5rem;
+  position: fixed;
+  z-index: 20;
 }
 .grid-menu{
   display: grid;
@@ -15,7 +17,7 @@
 
 .logo{
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
 

@@ -4,12 +4,11 @@
   @include bp-medium{
     height: 80vh;
   };
-
 }
 
 .canvas-container{
     width: 100%;
-    height:90vh;
+    height:95vh;
     position: absolute;
 }
 
@@ -18,19 +17,41 @@ canvas{
     width: 100%;
     height: 100%;
 }
+
 .overlay{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align:left;
     color: whitesmoke;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    padding-top: 53%;
+    padding-top: 40%;
+
 }
 
 .overlay-content{
   z-index: 10;
+  h1{
+    font-weight: bold;
+    font-size: 3rem;
+    .name{
+      color: #68C2E5;
+    }
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    .decor{
+      text-decoration: underline;
+    }
+  }
+  button{
+    width: 100%;
+    font-size: 2rem;
+  }
 }
 
 .overlay-content button{
@@ -41,79 +62,5 @@ canvas{
     cursor: pointer;
     position: relative;
     border-radius: 2px;
-}
-
-.learn{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  margin: 0 auto;
-  color: white;
-  h4{
-    margin-bottom: 5px;
-  }
-  i{
-    border: solid white;
-    border-width: 0px 5px 5px 0;
-    width: 25px;
-    height: 25px;
-    padding: 3px;
-    cursor: pointer;
-  }
-  .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-}
-
-
-
-
-
-
-
-
-.call-to-action{
-  text-align: left;
-  padding-top: 30%;
-  @include bp-medium{
-    padding-top: 20%;
-  };
-  @include bp-large{
-    padding-top: 15%;
-  };
-  h1{
-    @include font-size(70px);
-    line-height: 50px;
-    color: white;
-    font-family: $font-primary;
-    font-weight:bold;
-
-
-    @include bp-medium{
-      @include font-size(50px);
-      line-height: 30px;
-    };
-    @include bp-large{
-      @include font-size(80px);
-      line-height: 60px;
-    };
-
-  }
-  h3{
-    font-size: 1.76rem;
-    font-family: $font-text;
-    font-weight: 400;
-    color: white;
-    line-height: 25px;
-    text-transform: capitalize;
-    @include bp-medium{
-      @include font-size(30px);
-    };
-    @include bp-large{
-      @include font-size(40px);
-    };
-  }
+    font-family:$font-text;
 }

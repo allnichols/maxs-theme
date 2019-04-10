@@ -8,10 +8,8 @@ var c = canvas.getContext('2d');
 
 //Color Array
 var colorArray = [
-    '#3D013C',
-    '#60487F',
-    '#7888BF',
-    '#68C2E5',
+    // '#7888BF',
+    // '#68C2E5',
     'white'
   ]
 
@@ -58,15 +56,15 @@ Circle.prototype.draw = function(){
 var particleArray = [];
 
 function init(){
-    for(let i = 0; i < 200; i++){
+    for(let i = 0; i < 250; i++){
         var x =  innerWidth / 2;
         var y =  innerHeight / 2;
         var dx = 10;
         var dy = 10;
-        var radius = 2.5;
-        var color = randomColor( colorArray )
+        var radius = Math.random() * 2;
+        // var color = randomColor( colorArray )
 
-        particleArray.push( new Circle(x, y, dx, dy, radius, color) );
+        particleArray.push( new Circle(x, y, dx, dy, radius, 'white') );
 
     }
 }
