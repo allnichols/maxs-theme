@@ -30,10 +30,14 @@
           </div>
 
           <div class="menu-div">
-            <?php wp_nav_menu(array(
-              'theme_location' => 'menu-main',
-              'menu_class' => 'menu',
-            )); ?>
+
+          <div class="menu">
+            <ul>
+              <li><a href="#!">Projects</a></li>
+              <li><a href="#!">About Me</a></li>
+            </ul>
+          </div>
+
             <div class="burger">
               <span></span>
               <span></span>

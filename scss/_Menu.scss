@@ -12,7 +12,7 @@
 
 .logo-div{
   padding-top: 5px;
-  z-index:20;
+  z-index:10;
 }
 
 .logo{
@@ -87,14 +87,16 @@
   }
 }
 
+
+
 .menu{
-     height: 0;
+     height: 100%;
      width: 100%;
+     transform: translateX(200px);
      position: fixed;
+     background-color: black;
      z-index: 10;
-     background: $blue-jean;
-     left: 0;
-     overflow-y: hidden;
+     top: 0;
      transition: .2s;
      list-style-type: none;
      margin: 0 auto;
@@ -111,56 +113,24 @@
        text-align: right;
      };
 
+     ul{
+       padding-left: 10px;
+       text-align: left;
+       margin-top: 20vh;
+     }
        li{
          margin-top: 20px;
-         @include bp-medium{
-           display: inline;
-         };
          a{
            padding:10px;
            font-size: 2.48rem;
            color: white;
          }
        }
-       .menu-item{
-         @include bp-medium{
-           a{
-             text-align: center;
-             transition: .3s ease;
-             color: white;
-             font-size: 1.5rem;
-             position: relative;
-             &::before,
-             &::after{
-                position: absolute;
-                content: " ";
-                width:0;
-                height: 1.8px;
-                background-color: $rusty-red;
-                display: inline-block;
-                position: absolute;
-                transition: .3s ease;
-                top:35px;
-             }
-
-              &::after{
-                left: 10px;
-                top: 6px;
-              }
-
-               &:hover::after,
-               &:hover::before{
-                 width: 80%;
-               }
-
-             }
-           }
-         }
      }
 
 
-
 .show{
-  height: 100%;
-  padding-top: 20vh;
+  width: 100%;
+  transform: translateX(-100px);
+  // padding-top: 10vh;
 }

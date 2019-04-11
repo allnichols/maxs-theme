@@ -1,8 +1,11 @@
+//mobile menu
 var sideMenu = document.querySelector('.menu');
 document.querySelector('.burger').addEventListener("click", function(){
     sideMenu.classList.toggle('show');
     this.classList.toggle('close');
 });
+
+//scroll to section
 
 
 //Scroll and Show elements
@@ -31,8 +34,6 @@ function scrolling(e){
   if (isFullyVisible(act_btn)) {
      act_btn.classList.remove('hide');
      act_btn.classList.add('slide-in-right');
-  } else{
-
   }
 
   for (let i = 0; i < titles.length; i++) {
@@ -55,7 +56,6 @@ function scrolling(e){
 
 function isFullyVisible(el){
   var boundary = el.getBoundingClientRect();
-
   var top = boundary.top;
   var bottom = boundary.bottom;
 
