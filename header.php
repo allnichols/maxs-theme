@@ -19,6 +19,7 @@
     <!-- <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"> -->
 
     <?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:800|Roboto+Condensed:700|Roboto:900" rel="stylesheet">
   </head>
 <body <?php body_class(); ?>>
 
