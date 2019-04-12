@@ -46,10 +46,10 @@ function throttleScroll(e) {
 
 function scrolling(e){
 
-  if (isFullyVisible(act_btn)) {
-     act_btn.classList.remove('hide');
-     act_btn.classList.add('slide-in-right');
-  }
+  // if (isFullyVisible(act_btn)) {
+  //    act_btn.classList.remove('hide');
+  //    act_btn.classList.add('slide-in-right');
+  // }
 
   for (let i = 0; i < titles.length; i++) {
     let list = titles[i];

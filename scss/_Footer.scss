@@ -17,37 +17,6 @@ footer{
   }
 }
 
-.menu_footer{
-  text-align: center;
-  li{
-    margin: 30px 5px;
-  }
-@include bp-medium{
-  li{
-    display: inline;
-    text-align: inherit;
-
-  }
-
-  }
-  .menu-item{
-    a{
-      font-size:20px;
-      color: #606c76;
-      transition: .3s ease;
-      padding: 15px 10px;
-      &:hover{
-        color: white;
-      }
-    }
-  }
-  .current_page_item{
-    a{
-      color:white;
-    }
-  }
-}
-
 
 .bottom{
   background-color: black;
