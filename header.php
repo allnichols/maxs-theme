@@ -25,16 +25,16 @@
   <nav class="navigation">
     <div class="container-lrg grid-menu">
 
-          <div class="logo-div">
+          <!-- <div class="logo-div">
             <a href="<?php  $url = home_url();  echo $url; ?>"class="logo">Max Nichols</a>
-          </div>
+          </div> -->
 
           <div class="menu-div">
 
           <div class="menu">
             <ul>
-              <li><a href="#!">Projects</a></li>
-              <li><a href="#!">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">About Me</a></li>
             </ul>
           </div>
 

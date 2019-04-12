@@ -11,7 +11,7 @@
             <div class="overlay-content">
                     <h1>Hello, I'm <span class="name">Max Nichols</span> </h1>
                     <h2>I'm a <span class="decor">Front-End</span> Developer</h2>
-                    <button>Look at my Projects</button>
+                    <a href="#projects">Look at my Projects</a>
 
             </div>
          </div>
@@ -19,7 +19,7 @@
 
 
 
-    <section class="section_works">
+    <section class="section_works" id="projects">
       <h1 class="content-title">Featured Work</h1>
       <div class="container grid">
           <?php

@@ -5,28 +5,43 @@ document.querySelector('.burger').addEventListener("click", function(){
     this.classList.toggle('close');
 });
 
-//scroll to section
+//Burger change on scroll
+var $burger = document.querySelector('.burger');
+
+
+jQuery(function() {
+   jQuery(window).scroll(function () {
+      if ( jQuery(this).scrollTop() > 600 ) {
+         jQuery($burger).addClass("changeColor")
+      }
+      if ( jQuery(this).scrollTop() < 50 ) {
+         jQuery($burger).removeClass("changeColor")
+      }
+   });
+});
+
 
 
 //Scroll and Show elements
-let isScrolling = false;
-
-window.addEventListener("scroll",  throttleScroll, false);
-
-function throttleScroll(e){
-  if (isScrolling == false) {
-    window.requestAnimationFrame(function(){
-      scrolling(e);
-      isScrolling = false;
-    })
-  }
-}
-
-document.addEventListener("DOMContentLoaded", scrolling, false);
+window.addEventListener("scroll",  scrolling);
 
 const titles = document.querySelectorAll('.hide');
 const act_btn = document.querySelector('.btn-fancy');
 const works = document.querySelectorAll('.hide-work');
+
+var isScrolling = false;
+
+window.addEventListener("scroll", throttleScroll);
+
+function throttleScroll(e) {
+    if (isScrolling == false ) {
+        window.requestAnimationFrame(function() {
+          scrolling(e);
+          isScrolling = false;
+        });
+    }
+    isScrolling = true;
+}
 
 
 function scrolling(e){

@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container" id="skills">
 
       <div class="row">
         <div class="column section_call">
