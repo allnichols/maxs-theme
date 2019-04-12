@@ -5,10 +5,7 @@
   position: fixed;
   z-index: 20;
 }
-.grid-menu{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
+
 
 .logo-div{
   padding-top: 5px;
@@ -69,7 +66,7 @@
 .changeColor{
   background: black;
   border-radius: 10px;
-  
+
 }
 
 .close{
@@ -118,21 +115,29 @@
        position: static;
        overflow-x: inherit;
        display: inline;
-       float: right;
-       text-align: right;
      };
 
      ul{
        padding-left: 10px;
        text-align: left;
        margin-top: 20vh;
+       @include bp-medium{
+         margin-top: 10px;
+         text-align: center;
+       };
      }
        li{
          margin-top: 20px;
+         @include bp-medium{
+           display: inline;
+         };
          a{
            padding:10px;
            font-size: 2.48rem;
            color: black;
+           @include bp-medium{
+             color: white;
+           };
          }
        }
      }
