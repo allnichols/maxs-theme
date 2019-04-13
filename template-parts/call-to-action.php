@@ -1,15 +1,19 @@
 <footer>
   <div class="container" id="skills">
 
-        <div class="column section_call">
-          <div class="title-info">
+        <div class="section_call">
+          <div class="img-box">
             <img src="<?php the_field('image_of_me') ?>" alt="me" class="hide"/>
-            <h4 class="hide">Allen 'Max' Nichols.</h4>
-            <h5 class="hide">I'm a Self Tought Front-End Developer dowload my <a download href="<?php the_field('resume') ?>"> resume</a></h5>
           </div>
 
 
             <div class="skills">
+
+              <div class="name-info">
+               <h4 class="hide">Allen 'Max' Nichols.</h4>
+              <h5 class="hide">I'm a Self Tought Front-End Developer dowload my <a download href="<?php the_field('resume') ?>"> resume</a></h5>
+            </div>
+
               <h4 class="hide">Skills:</h4>
               <p class="hide">HTML</p>
               <p class="hide">CSS</p>

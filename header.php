@@ -31,6 +31,7 @@
             <ul>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#skills">About Me</a></li>
+              <li><a download href="<?php the_field('resume') ?>">Resume</a></li>
             </ul>
           </div>
 
