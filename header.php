@@ -24,11 +24,6 @@
 <body <?php body_class(); ?>>
 
   <nav class="navigation">
-    <div class="container-lrg grid-menu">
-
-          <!-- <div class="logo-div">
-            <a href="<?php  $url = home_url();  echo $url; ?>"class="logo">Max Nichols</a>
-          </div> -->
 
           <div class="menu-div">
 
@@ -46,5 +41,4 @@
            </div>
           </div>
 
-    </div>
   </nav>

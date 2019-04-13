@@ -29,7 +29,13 @@
 .section_call{
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  .title-info{
+    a{
+      text-decoration: underline;
+    }
+  }
 
   .hide{
     opacity:0;
@@ -45,7 +51,6 @@
   }
 
   .skills{
-
     p{
       display: inline-block;
       border: 3px solid $rusty-red;

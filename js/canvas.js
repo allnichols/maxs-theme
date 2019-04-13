@@ -41,7 +41,7 @@ Circle.prototype.draw = function(){
 var particleArray = [];
 
 function init(){
-    for(let i = 0; i < 250; i++){
+    for(let i = 0; i < 1050; i++){
         var x =  innerWidth / 2;
         var y =  innerHeight / 2;
         var radius = Math.random() * 1.5;

@@ -11,14 +11,30 @@ var $burger = document.querySelector('.burger');
 
 jQuery(function() {
    jQuery(window).scroll(function () {
-      if ( jQuery(this).scrollTop() > 600 ) {
+      if ( jQuery(this).scrollTop() >= 600 ) {
          jQuery($burger).addClass("changeColor")
       }
-      if ( jQuery(this).scrollTop() < 50 ) {
+      if ( jQuery(this).scrollTop() <= 590 ) {
          jQuery($burger).removeClass("changeColor")
       }
    });
 });
+
+var nav = document.querySelector('.navigation');
+
+if (window.innerWidth >= 765) {
+  jQuery(function() {
+     jQuery(window).scroll(function () {
+        if ( jQuery(this).scrollTop() > 600 ) {
+           jQuery(nav).addClass("nav-scroll")
+        }
+        if ( jQuery(this).scrollTop() < 50 ) {
+           jQuery(nav).removeClass("nav-scroll")
+        }
+     });
+  });
+
+}
 
 
 

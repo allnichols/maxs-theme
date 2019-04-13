@@ -64,7 +64,7 @@ function js_enqueue_script(){
   wp_enqueue_script('scripts', $url, array('jquery'), date("h:i:s"), true );
 
   $url_canvas = get_template_directory_uri() . '/js/canvas.js';
-  wp_enqueue_script('canvas', $url_canvas, array('jquery'), null, true);
+  wp_enqueue_script('canvas', $url_canvas, array('jquery'), date("h:i:s"), true);
 
   $url_jquery = get_template_directory_uri() . '/js/jquery.js';
   wp_enqueue_script('jquery', $url_jquery, array('jquery'), null, false);

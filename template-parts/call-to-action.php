@@ -5,7 +5,7 @@
           <div class="title-info">
             <img src="<?php the_field('image_of_me') ?>" alt="me" class="hide"/>
             <h4 class="hide">Allen 'Max' Nichols.</h4>
-            <h5 class="hide">I'm a Self Tought Front-End Developer</h5>
+            <h5 class="hide">I'm a Self Tought Front-End Developer dowload my <a download href="<?php the_field('resume') ?>"> resume</a></h5>
           </div>
 
 
