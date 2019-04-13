@@ -11,7 +11,7 @@
 
               <div class="name-info">
                <h4 class="hide">Allen 'Max' Nichols.</h4>
-              <h5 class="hide">I'm a Self Tought Front-End Developer dowload my <a download href="<?php the_field('resume') ?>"> resume</a></h5>
+              <h5 class="hide">I'm a Self Taught Front-End Developer dowload my <a download href="<?php the_field('resume') ?>"> resume</a></h5>
             </div>
 
               <h4 class="hide">Skills:</h4>
@@ -24,7 +24,7 @@
               <p class="hide">React Router</p>
             </div>
 
-            <!-- <a href="<?php echo get_page_link(66); ?>" class="btn-fancy hide">Fill Me In.</a> -->
+            
         </div>
     </div>
 </footer>
