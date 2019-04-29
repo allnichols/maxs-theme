@@ -3,6 +3,7 @@
 
       <div class="work_img hide-work">
         <?php the_post_thumbnail('medium')?>
+        <img src="<?php the_field('image')?>">
       </div>
 
         <div class="work_description">

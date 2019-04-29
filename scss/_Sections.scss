@@ -26,7 +26,7 @@
   .img-box{
     margin: 0 auto;
     img{
-      width: 225px;
+      width: 180px;
     }
   }
 
@@ -34,7 +34,7 @@
   .name-info{
     text-align: center;
     @include bp-large{
-          width: 300px;
+          width: 380px;
           text-align: left;
           h4{
             margin-top: 2px;
@@ -52,11 +52,10 @@
 
   img{
     width: 200px;
-  }
+    box-shadow: 10px 10px 15px -11px rgba(0,0,0,0.75);
+}
 
-  h4:nth-of-type(2){
-    // text-align: left;
-  }
+
 
   .skills{
     text-align: center;
@@ -76,4 +75,25 @@
 
   }
 
+}
+
+.form-section{
+  margin-top: 90px;
+  h2{
+    text-align: center;
+    color: white;
+  }
+  .wpforms-field-container{
+    label{
+      color: white;
+    }
+    span{
+      color:$rusty-red;
+    }
+    input,
+    textarea{
+      background: white;
+    }
+    
+  }
 }
