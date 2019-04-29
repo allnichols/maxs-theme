@@ -6,10 +6,6 @@
    padding: 10px 20px;
    position: relative;
    transition: all .3s;
-   &:hover{
-     background: white;
-     color: $color-primary;
-   }
 }
 
 .btn-service{
@@ -25,6 +21,13 @@
     background: $rusty-red;
     color: white;
   }
+}
+
+.btn-github{
+   i{
+     color: white;
+     font-size: 2rem;
+   }
 }
 
 
