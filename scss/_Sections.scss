@@ -79,21 +79,21 @@
 
 .form-section{
   margin-top: 90px;
-  h2{
+  h1{
     text-align: center;
     color: white;
   }
-  .wpforms-field-container{
-    label{
+
+  .icons{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    i{
+      font-size: 3.45em;
+      padding:  1rem 2.3rem;
       color: white;
     }
-    span{
-      color:$rusty-red;
-    }
-    input,
-    textarea{
-      background: white;
-    }
-    
   }
+
 }

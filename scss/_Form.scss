@@ -9,9 +9,7 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
-  appearance: none;
-  background-color: transparent;
-  border: 0.1rem solid $color-quaternary;
+  border: 0.1rem solid $tan;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: inherit;
@@ -20,8 +18,9 @@ select {
   width: 100%;
 
   &:focus {
-    border-color: $color-primary;
-    outline: 0;
+    border-color: $tan;
+    outline: 3;
+    background-color: beige;
   }
 }
 
@@ -44,6 +43,7 @@ legend {
   margin-bottom: 0.5rem;
   margin-left: .3rem;
   font-weight: bold;
+  color: white;
 }
 
 .title-container{
@@ -81,38 +81,13 @@ legend {
 
 }
 
-.wpforms-field-checkbox,
-.wpforms-field-select,
-.wpforms-field-radio{
-  margin-bottom: 2.5rem;
-  label{
-    font-weight: bold;
-    ul{
-      label{
-        font-weight: normal;
-      }
-    }
-  }
-}
 
-.wpforms-field-radio{
+
   .wpforms-field-label-inline{
     font-weight: normal;
+    color: aliceblue;
   }
-}
 
-
-.wpforms-field-checkbox{
-  margin-bottom: 2.5rem;
-  label{
-    font-weight: bold;
-  }
-  ul{
-    label{
-      font-weight: normal;
-    }
-  }
-}
 
 .wpforms-error{
   color: lightcoral;
@@ -125,6 +100,9 @@ legend {
   padding: 15px 20px;
   color: white;
   width: 100%;
+  @include bp-large{
+    width: 40%;
+  }
   font-size: 1.9rem;
   transition: .3s ease;
   cursor: pointer;
@@ -137,6 +115,8 @@ fieldset {
   border-width: 0;
   padding: 0;
 }
+
+
 
 // input[type='checkbox'],
 // input[type='radio'] {
