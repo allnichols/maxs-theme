@@ -14,7 +14,7 @@
               <h5 class="hide">
               I'm a Self Taught Front-End Developer. I love clean readable code, learning new technologies, and improving my skills. I'm also a teacher!   
               </h5>
-              <h5 class="hide"><a download href="<?php the_field('resume') ?>"> resume</a></h5>
+              <h5 class="hide">Download my resume <a download href="<?php the_field('resume') ?>"> resume!</a></h5>
             </div>
 
             <div class="tech">
