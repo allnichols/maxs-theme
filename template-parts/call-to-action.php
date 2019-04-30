@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-  <hr>
+  <div class="dots"><p>········</p></div>
     <div class="form-section">
 
       <section class="container form">  

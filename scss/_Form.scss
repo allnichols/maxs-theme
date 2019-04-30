@@ -34,7 +34,7 @@ select {
 }
 
 textarea {
-  min-height: 6.5rem;
+  min-height: 8.5rem;
 }
 
 label,
@@ -73,12 +73,11 @@ legend {
   display: none;
 }
 
-.form-container{
-  max-width: 72rem;
+.wpforms-container{
+  max-width: 50%;
   margin: 10px auto;
   padding-top: 5vh;
   padding-bottom: 5vh;
-
 }
 
 
@@ -102,6 +101,8 @@ legend {
   width: 100%;
   @include bp-large{
     width: 40%;
+    display: block;
+    margin: 2rem auto;
   }
   font-size: 1.9rem;
   transition: .3s ease;

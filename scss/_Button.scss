@@ -24,10 +24,15 @@
 }
 
 .btn-github{
+
    i{
      color: white;
      font-size: 2rem;
    }
+   &:hover{
+     background: $tan;
+   }
+   
 }
 
 
