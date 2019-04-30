@@ -30,7 +30,16 @@
             </div>
         </div>
     </div>
-  <div class="dots"><p>········</p></div>
+  <div class="dots">
+    <span>·</span>
+    <span>·</span>
+    <span>·</span>
+    <span>·</span>
+    <span>·</span>
+    <span>·</span>
+    <span>·</span>
+    <span>·</span>
+  </div>
     <div class="form-section">
 
       <section class="container form">  

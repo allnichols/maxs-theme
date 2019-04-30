@@ -78,7 +78,10 @@
 }
 
 .dots{
-  p{
+  display: flex;
+  justify-content: center;
+  height: 10px;
+  span{
     font-size: 10rem;
     color: white;
     margin-top: 9rem;

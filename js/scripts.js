@@ -59,13 +59,8 @@ function throttleScroll(e) {
     isScrolling = true;
 }
 
-
+//begging of scroll check
 function scrolling(e){
-
-  // if (isFullyVisible(act_btn)) {
-  //    act_btn.classList.remove('hide');
-  //    act_btn.classList.add('slide-in-right');
-  // }
 
   for (let i = 0; i < titles.length; i++) {
     let list = titles[i];
@@ -84,7 +79,9 @@ function scrolling(e){
   }
 
 }
+//end of scrolling check
 
+//function to check if element is fully visible
 function isFullyVisible(el){
   var boundary = el.getBoundingClientRect();
   var top = boundary.top;
@@ -92,3 +89,14 @@ function isFullyVisible(el){
 
   return ((top >= 0) && (bottom <= window.innerHeight));
 }
+
+//event listener for dots
+const dotsContainer = document.querySelector('.dots');
+
+dotsContainer.addEventListener('mouseover', function(event){
+ console.log(event.target);
+})
+
+
+
+
