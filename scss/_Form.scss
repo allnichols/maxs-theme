@@ -74,7 +74,10 @@ legend {
 }
 
 .wpforms-container{
-  max-width: 50%;
+  width: 90%;
+  @include bp-medium{
+    width: 50%;
+  }
   margin: 10px auto;
   padding-top: 5vh;
   padding-bottom: 5vh;
