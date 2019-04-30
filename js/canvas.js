@@ -1,5 +1,6 @@
 //setting the height and width of the canvas
 var canvas = document.querySelector('canvas');
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
