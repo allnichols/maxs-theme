@@ -1,5 +1,5 @@
-<footer>
-  <div class="container" id="skills">
+<footer id="skills">
+  <div class="container" >
 
         <div class="section_call">
           <div class="img-box">
@@ -14,7 +14,7 @@
               <h5 class="hide">
               I'm a Self Taught Front-End Developer. I love clean readable code, learning new technologies, and improving my skills. I'm also a teacher!
               </h5>
-              <h5 class="hide">Download my<a download href="<?php the_field('resume') ?>"> resume!</a></h5>
+              <h5 class="hide">Download my <a download href="<?php the_field('resume') ?>">resume</a>!</h5>
             </div>
 
             <div class="tech">
@@ -25,27 +25,16 @@
               <p class="hide">JavaScript</p>
               <p class="hide">jQuery</p>
               <p class="hide">React</p>
-              <p class="hide">React Router</p>
             </div>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- <div class="dots">
-  <span>·</span>
-  <span>·</span>
-  <span>·</span>
-  <span>·</span>
-  <span>·</span>
-  <span>·</span>
-  <span>·</span>
-  <span>·</span>
-</div> -->
 
 <div class="form-section">
 
-  <section class="container form">
+  <section id="contact" class="container form">
     <h1>Say Hello!</h1>
     <div class="icons">
       <a href="#!"><i class="fab fa-github-square"></i></a>

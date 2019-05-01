@@ -89,14 +89,3 @@ function isFullyVisible(el){
 
   return ((top >= 0) && (bottom <= window.innerHeight));
 }
-
-//event listener for dots
-const dotsContainer = document.querySelector('.dots');
-
-dotsContainer.addEventListener('mouseover', function(event){
- console.log(event.target);
-})
-
-
-
-

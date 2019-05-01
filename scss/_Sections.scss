@@ -27,6 +27,8 @@
     margin: 0 auto;
     img{
       width: 180px;
+      border-radius: 50px;
+      border: 1px solid $tan;
     }
   }
 
@@ -61,7 +63,8 @@
     text-align: center;
     p{
       display: inline-block;
-      border: 3px solid $rusty-red;
+      border: 3px solid $tan;
+      border-radius: 50px;
       margin: 10px;
       padding: 10px;
       text-align: left;
