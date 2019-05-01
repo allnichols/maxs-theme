@@ -2,7 +2,7 @@
     <div class="work">
 
       <div class="work_img hide-work">
-        <?php the_post_thumbnail('medium')?>
+        <?php the_post_thumbnail('large')?>
         <img src="<?php the_field('image')?>">
       </div>
 

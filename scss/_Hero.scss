@@ -56,7 +56,7 @@ canvas{
     span:before{
       content: '';
       display: inline-block;
-      animation: text-rotation infinite 10s linear;
+      animation: text-rotation infinite 10s ease-in-out;
       color: $tan;
     }
   }

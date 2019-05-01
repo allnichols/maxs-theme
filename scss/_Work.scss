@@ -10,10 +10,18 @@
   .work_img{
     img{
         object-fit: cover;
+        height: 180px;
         box-shadow: 10px 10px 15px -11px rgba(0,0,0,0.75);
+        @include bp-medium{
+           height: 200px;
+           transition: transform .2s ease-in-out;
+          &:hover{
+            transform:scale(1.1);
+          }
+        }
+      }
     }
   }
-}
 
 .work_description{
 
