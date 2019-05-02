@@ -74,7 +74,28 @@ $font-text: "Karla", sans-serif;
   }
 }
 
-
+@-webkit-keyframes text-rotation{
+  0%{  content: 'CODE!';  opacity: 1; }
+  10%{ content: 'CODE!';  opacity: 1; }
+  15%{ content: 'CODE!';  opacity: 0; }
+  20%{ content: 'LEARN!'; opacity: 0; }
+  25%{ content: 'LEARN!'; opacity: 1; }
+  30%{ content: 'LEARN!'; opacity: 1; }
+  35%{ content: 'LEARN!'; opacity: 1; }
+  40%{ content: 'LEARN!'; opacity: 0; }
+  45%{ content: 'READ!'; opacity: 0; }
+  50%{ content: 'READ!'; opacity: 1; }
+  55%{ content: 'READ!'; opacity: 1; }
+  60%{ content: 'READ!'; opacity: 1; }
+  65%{ content: 'READ!'; opacity: 0; }
+  70%{ content: 'CODE!'; opacity: 0; }
+  75%{ content: 'CODE!'; opacity: 1; }
+  80%{ content: 'CODE!'; opacity: 1; }
+  85%{ content: 'CODE!'; opacity: 1; }
+  90%{ content: 'CODE!'; opacity: 1; }
+  95%{ content: 'CODE!'; opacity: 1; }
+  100%{ content: 'CODE!'; opacity: 1; }
+}
 @keyframes text-rotation{
   0%{  content: 'CODE!';  opacity: 1; }
   10%{ content: 'CODE!';  opacity: 1; }
