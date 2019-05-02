@@ -24,13 +24,14 @@
 }
 
 .btn-github{
-
+  background-color: black;
+  transition: border-radius .3s ease-in-out;
    i{
      color: white;
      font-size: 2rem;
    }
    &:hover{
-     background: black;
+     border-radius: 10px;
    }
 
 }

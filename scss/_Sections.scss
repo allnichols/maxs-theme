@@ -68,6 +68,11 @@
       margin: 10px;
       padding: 10px;
       text-align: left;
+      transition: border-top-right-radius .3 ease-in-out;
+      &:hover{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
     }
     @include bp-large{
       text-align: left;
