@@ -6,17 +6,34 @@
    padding: 10px 20px;
    position: relative;
    transition: all .3s;
-   &:hover{
-     background: #fff;
-     color: $color-primary;
-   }
+}
+
+.btn-service{
+  background-color: $blue-jean;
+  &:hover{
+    background: $tan;
+    color: white;
+  }
 }
 
 .btn-work{
   &:hover{
-    background: $rusty-red;
+    background: $tan;
     color: white;
   }
+}
+
+.btn-github{
+  background-color: black;
+  transition: border-radius .3s ease-in-out;
+   i{
+     color: white;
+     font-size: 2rem;
+   }
+   &:hover{
+     border-radius: 10px;
+   }
+
 }
 
 

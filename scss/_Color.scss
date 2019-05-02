@@ -1,7 +1,7 @@
 // Color Variables
 $color-initial: #262626 !default;
 $color-primary: #1a75ff !default;
-$color-secondary: #606c76 !default;
+$color-secondary: #444444 !default;
 $color-tertiary:  #ffffff !default;
 $retro-red:  #fb2e01 !default;
 $color-quaternary: #d1d1d1 !default;
@@ -9,7 +9,8 @@ $color-quinary: #e1e1e1 !default;
 $button-hover:  #427dd7 !default;
 
 $rusty-red: #c1432e;
-$tan: #c9af98;
-$blue-jean:#3a4660;
+$tan: #da9e6a;
+$blue-jean: #3a4660;
 
-$primary-dark: darken($color-primary, 30%)
+$primary-dark: darken($color-primary, 30%);
+$light-blue-jean: lighten($blue-jean, 68%);
