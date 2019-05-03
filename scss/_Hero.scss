@@ -53,7 +53,7 @@ canvas{
       font-size: 4rem;
     }
     span:before{
-      content: '';
+      content: 'CODE!';
       display: inline-block;
       animation: text-rotation infinite 10s ease-in-out;
       color: $tan;
